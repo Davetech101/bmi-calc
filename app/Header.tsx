@@ -1,11 +1,16 @@
-import React from 'react'
+import React from "react";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 function Header(): React.JSX.Element {
-    return (
-        <header className='bg-gray-800 text-slate-50 h-20'>
-            header
-        </header>
-    )
+  return (
+    <header className="bg-gray-300  text-slate-50 h-28 flex items-center p-10 justify-between shadow-xl">
+      <button className="">
+        <RxHamburgerMenu size="3rem" />
+      </button>
+
+      <p className="uppercase text-2xl">bmi calculator</p>
+    </header>
+  );
 }
 
-export default Header
+export default Header;
