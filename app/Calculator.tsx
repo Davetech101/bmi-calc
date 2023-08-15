@@ -1,11 +1,20 @@
-import React from 'react'
+import React from "react";
+import { BsGenderMale, BsGenderFemale } from "react-icons/bs";
 
 function Calculator(): React.JSX.Element {
-    return (
-        <main>
+  return (
+    <main>
+      <div className="">
+        <button type="button" className="">
+          <BsGenderMale />
+        </button>
 
-        </main>
-    )
+        <button type="button" className="">
+          <BsGenderFemale />
+        </button>
+      </div>
+    </main>
+  );
 }
 
-export default Calculator
+export default Calculator;
