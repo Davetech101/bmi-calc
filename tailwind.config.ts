@@ -15,6 +15,7 @@ const config: Config = {
       },
       colors: {
         dark: "rgb(15 23 42)",
+        dark2: "#1e2237"
       }
     },
   },
