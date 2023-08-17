@@ -25,9 +25,15 @@ function Calculator(): React.JSX.Element {
       </div>
 
       <div className="mt-7 text-gray-300">
+        <div className="flex justify-center">
         <button className="text-2xl">CM</button>
-        <button className="bg-dark2 w-12 h-5 rounded-full m-10"></button>
+        <button className="bg-dark2 w-16 h-8 rounded-full m-5">
+            <div className="w-8 h-8 bg-gray-300 rounded-full">
+
+            </div>
+        </button>
         <button className="text-2xl">FT</button>
+        </div>
         <div className="relative">
           <input type="number" id="cm" className={heightStyles} />
           <label htmlFor="cm" className={heightLabelStyles}>
