@@ -6,7 +6,7 @@ function Calculator(): React.JSX.Element {
     "text-3xl text-gray-300 p-10 bg-dark2 rounded-lg w-full flex flex-col items-center justify-center";
 
   const heightStyles =
-    "bg-dark2 p-5 rounded-md outline-none m-1 placeholder:text-right ";
+    "bg-dark2 p-5 rounded-md outline-none m-1 placeholder:text-right w-full";
 
   const heightLabelStyles = "absolute top-5 right-5";
 
@@ -26,6 +26,7 @@ function Calculator(): React.JSX.Element {
 
       <div className="mt-7 text-gray-300">
         <button className="text-2xl">CM</button>
+        <button className="bg-dark2 w-12 h-5 rounded-full m-10"></button>
         <button className="text-2xl">FT</button>
         <div className="relative">
           <input type="number" id="cm" className={heightStyles} />
@@ -34,7 +35,7 @@ function Calculator(): React.JSX.Element {
           </label>
         </div>
 
-        <div className="flex">
+        <div className="flex justify-between ">
           <div className="relative">
             <input type="number" id="ft" className={heightStyles} />
             <label htmlFor="ft" className={heightLabelStyles}>
