@@ -10,10 +10,10 @@ function Calculator(): React.JSX.Element {
 
   const heightLabelStyles = "absolute top-5 right-5";
 
-  const widthStyles = "text-3xl text-gray-300 p-10 bg-dark2 rounded-lg w-full flex flex-col items-center justify-center outline-none m-1";
+  const widthStyles = "text-3xl text-gray-300 p-10 bg-dark2 rounded-lg w-full outline-none m-1";
 
   return (
-    <main className="p-10">
+    <main className="p-10 max-w-3xl mx-auto my-0">
       <div className="flex items-center justify-between gap-5">
         <button type="button" className={genderStyles}>
           <BsGenderMale size="8rem" />
@@ -41,7 +41,7 @@ function Calculator(): React.JSX.Element {
           </label>
         </div>
 
-        <div className="flex justify-between ">
+        <div className="flex gap-10 justify-between">
           <div className="relative">
             <input type="number" id="ft" className={heightStyles} />
             <label htmlFor="ft" className={heightLabelStyles}>
