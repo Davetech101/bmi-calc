@@ -8,9 +8,12 @@ function Calculator(): React.JSX.Element {
   const heightStyles =
     "bg-dark2 p-5 rounded-md outline-none m-1  w-full";
 
-  const heightLabelStyles = "absolute top-5 right-5";
+  const heightLabelStyles = "absolute top-5 right-5 text-gray-300 text-2xl text-italics";
 
   const widthStyles = "text-3xl text-gray-300 p-10 bg-dark2 rounded-lg w-full outline-none m-1";
+
+  const widthLabelStyles = "text-2xl";
+
 
   return (
     <main className="p-10 max-w-3xl mx-auto my-0">
@@ -59,14 +62,16 @@ function Calculator(): React.JSX.Element {
         <div className="flex mt-7 gap-10">
           <div className="">
             <input type="number" id="kg" className={widthStyles} />
-            <label htmlFor="weight">Weight</label>
+            <label htmlFor="weight" className={widthLabelStyles}>Weight (kg)</label>
           </div>
           <div className="">
             <input type="number" id="kg" className={widthStyles} />
-            <label htmlFor="kg">Age</label>
+            <label htmlFor="kg" className={widthLabelStyles}>Age (years)</label>
           </div>
         </div>
       </div>
+
+      <button className="text-gray-300 mt-5 bg-dark2 px-10 py-5 w-full text-2xl rounded-lg">Calculate</button>
     </main>
   );
 }
