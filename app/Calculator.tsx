@@ -16,7 +16,7 @@ function Calculator(): React.JSX.Element {
 
 
   return (
-    <main className="p-10 max-w-3xl mx-auto my-0">
+    <main className="p-10 max-w-3xl mx-auto mt-24">
       <div className="flex items-center justify-between gap-5">
         <button type="button" className={genderStyles}>
           <BsGenderMale size="8rem" />
