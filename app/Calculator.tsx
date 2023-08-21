@@ -1,7 +1,14 @@
-import React from "react";
+'use client'
+import { useState } from "react";
 import { BsGenderMale, BsGenderFemale } from "react-icons/bs";
 
 function Calculator(): React.JSX.Element {
+    const [height, setHeight] = useState("cm")
+
+    const heightChange = () => {
+        setHeight(prev => prev === "ft" ? "cm" : "ft")        
+    }
+
   const genderStyles =
     "text-3xl text-gray-300 p-10 bg-dark2 rounded-lg w-full flex flex-col items-center justify-center";
 
@@ -32,7 +39,7 @@ function Calculator(): React.JSX.Element {
       <div className="mt-7 text-gray-300">
         <div className="flex justify-center">
           <button className="text-2xl">CM</button>
-          <button className="bg-dark2 w-16 h-8 rounded-full m-5">
+          <button onClick={heightChange} className="bg-dark2 w-16 h-8 rounded-full m-5">
             <div className="w-8 h-8 bg-gray-300 rounded-full"></div>
           </button>
           <button className="text-2xl">FT</button>
