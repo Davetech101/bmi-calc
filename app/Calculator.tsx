@@ -12,6 +12,10 @@ function Calculator(): React.JSX.Element {
     setHeight((prev) => (prev === "ft" ? "cm" : "ft"));
   };
 
+  const onChange = () => {
+    
+  }
+
   const genderStyles =
     "text-3xl text-gray-300 p-10 bg-dark2 rounded-lg w-full flex flex-col items-center justify-center";
 
