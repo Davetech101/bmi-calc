@@ -53,9 +53,9 @@ function Calculator(): React.JSX.Element {
         </div>
 
         <div className="overflow-x-hidden">
-          <div className={`flex gap-10 transition duration-250 ${height === "ft" ? "-translate-x-full " : ""
+          <div className={`flex gap-16 transition duration-250 ${height === "ft" ? "-translate-x-full " : ""
               }}`}>
-            <div className="relative w-12/12 shrink-0">
+            <div className="relative w-11/12 shrink-0">
               <input type="number" id="cm" className={heightStyles} />
               <label htmlFor="cm" className={heightLabelStyles}>
                 cm
