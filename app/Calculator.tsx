@@ -51,25 +51,31 @@ function Calculator(): React.JSX.Element {
           </button>
           <button className="text-2xl">FT</button>
         </div>
-        <div className="relative">
-          <input type="number" id="cm" className={heightStyles} />
-          <label htmlFor="cm" className={heightLabelStyles}>
-            cm
-          </label>
-        </div>
 
-        <div className="flex gap-10 justify-between">
-          <div className="relative">
-            <input type="number" id="ft" className={heightStyles} />
-            <label htmlFor="ft" className={heightLabelStyles}>
-              ft
-            </label>
-          </div>
-          <div className="relative">
-            <input type="number" id="inches" className={heightStyles} />
-            <label htmlFor="inches" className={heightLabelStyles}>
-              inches
-            </label>
+        <div className="overflow-x-hidden">
+          <div className={`flex gap-10 transition duration-250 ${height === "ft" ? "-translate-x-full " : ""
+              }}`}>
+            <div className="relative w-12/12 shrink-0">
+              <input type="number" id="cm" className={heightStyles} />
+              <label htmlFor="cm" className={heightLabelStyles}>
+                cm
+              </label>
+            </div>
+
+            <div className="flex gap-10 justify-between w-full shrink-0">
+              <div className="relative">
+                <input type="number" id="ft" className={heightStyles} />
+                <label htmlFor="ft" className={heightLabelStyles}>
+                  ft
+                </label>
+              </div>
+              <div className="relative">
+                <input type="number" id="inches" className={heightStyles} />
+                <label htmlFor="inches" className={heightLabelStyles}>
+                  inches
+                </label>
+              </div>
+            </div>
           </div>
         </div>
 
