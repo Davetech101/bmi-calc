@@ -4,6 +4,9 @@ import { BsGenderMale, BsGenderFemale } from "react-icons/bs";
 
 function Calculator(): React.JSX.Element {
   const [height, setHeight] = useState("cm");
+  const [formData, setFormData] = useState({
+    
+  })
 
   const heightChange = () => {
     setHeight((prev) => (prev === "ft" ? "cm" : "ft"));
