@@ -5,7 +5,7 @@ import { BsGenderMale, BsGenderFemale } from "react-icons/bs";
 function Calculator(): React.JSX.Element {
   const [height, setHeight] = useState("cm");
   const [formData, setFormData] = useState({
-    
+
   })
 
   const heightChange = () => {
@@ -56,9 +56,10 @@ function Calculator(): React.JSX.Element {
         </div>
 
         <div className="overflow-x-hidden">
-          <div className={`flex gap-16 transition duration-250 ${height === "ft" ? "-translate-x-full " : ""
-              }}`}>
-            <div className="relative w-11/12 shrink-0">
+          <div className={`flex transition duration-250 ${height === "ft" ? "-translate-x-full " : ""
+              }`}>
+            <div className={`relative w-full shrink-0 ${height === "ft" ? "opacity-0" : ""
+              }`}>
               <input type="number" id="cm" className={heightStyles} />
               <label htmlFor="cm" className={heightLabelStyles}>
                 cm
