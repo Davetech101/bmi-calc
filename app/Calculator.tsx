@@ -5,7 +5,12 @@ import { BsGenderMale, BsGenderFemale } from "react-icons/bs";
 function Calculator(): React.JSX.Element {
   const [height, setHeight] = useState("cm");
   const [formData, setFormData] = useState({
-
+        gender: "",
+        cm: "",
+        ft: "",
+        inches: "",
+        kg:"",
+        age:"",
   })
 
   const heightChange = () => {
@@ -13,7 +18,7 @@ function Calculator(): React.JSX.Element {
   };
 
   const onChange = () => {
-    
+
   }
 
   const genderStyles =
